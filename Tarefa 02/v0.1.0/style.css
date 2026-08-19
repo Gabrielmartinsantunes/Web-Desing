@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.container {
+    background-color: white;
+    width: 300px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+h1 {
+    color: #333;
+}
+
+#moeda {
+    font-size: 80px;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+#resultado {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.girando {
+    animation: girar 1s ease-in-out;
+}
+
+@keyframes girar {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(1440deg);
+    }
+}
