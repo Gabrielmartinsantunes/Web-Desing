@@ -1,0 +1,22 @@
+let contador = 0;
+
+function mostrarToast(mensagem) {
+    let toast = document.getElementById("toast");
+    if (!toast) {
+        toast = document.createElement("div");
+        toast.id = "toast";
+        toast.className = "toast";
+        document.body.appendChild(toast);
+    }
+    toast.textContent = mensagem;
+    toast.classList.add("show");
+}
+
+document.getElementById("Botao").onclick = () => {
+    contador++;
+    mostrarToast(Você clicou ${contador});
+};
+
+document.getElementById("btnVerContador").onclick = () => {
+    mostrarToast(Você já apertou ${contador} vezes);
+};
