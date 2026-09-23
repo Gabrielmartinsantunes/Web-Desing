@@ -1,159 +1,344 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="pt-BR">
 
 <head>
-    <title>Jogos</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO 2: título descritivo com as principais palavras-chave -->
+    <title>Jogos do Xbox Game Pass em setembro de 2026</title>
+
+    <!-- SEO 2: descrição da página para mecanismos de pesquisa -->
+    <meta
+        name="description"
+        content="Conheça os jogos do Xbox Game Pass em setembro de 2026, com lançamentos, plataformas e informações sobre os novos jogos disponíveis."
+    >
+
+    <!-- Permite que mecanismos de busca indexem a página -->
+    <meta name="robots" content="index, follow">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            background: #111;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            color: #222222;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #107c10;
             color: white;
-            font-family: Arial;
+            padding: 30px 20px;
+            text-align: center;
         }
 
-        .caixa {
-            width: 90%;
-            margin: auto;
+        header h1 {
+            margin: 0 0 10px;
         }
 
-        .jogo {
-            background: #222;
-            margin: 15px;
+        nav {
+            background-color: #222222;
             padding: 15px;
+            text-align: center;
         }
 
-        img {
-            width: 300px;
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
         }
 
-        a {
-            color: #00aaff;
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .introducao {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        .jogos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        article {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        article img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        article h2 {
+            color: #107c10;
+        }
+
+        .plataformas {
+            font-weight: bold;
+        }
+
+        .data {
+            color: #555555;
+        }
+
+        footer {
+            background-color: #222222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        /* Adaptação para celulares */
+        @media (max-width: 700px) {
+            .jogos {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px 0;
+            }
         }
     </style>
 </head>
 
 <body>
 
+    <header>
+        <!-- Apenas um H1 principal -->
+        <h1>Jogos do Xbox Game Pass em setembro de 2026</h1>
 
-    <div class="caixa">
+        <p>
+            Conheça alguns dos novos jogos disponíveis no Xbox Game Pass.
+        </p>
+    </header>
 
-        <h1>Jogos</h1>
+    <nav aria-label="Navegação principal">
+        <a href="#runescape">RuneScape</a>
+        <a href="#marvel">Marvel Cosmic Invasion</a>
+        <a href="#planet">Planet of Lana II</a>
+        <a href="#routine">Routine</a>
+        <a href="#kernel">Kernel Hearts</a>
+        <a href="#ninja">Ninja Gaiden 4</a>
+    </nav>
 
-        <div>
-            <p>
-                Aqui tem alguns jogos que chegaram no Game Pass.
-            </p>
-        </div>
+    <main>
 
-        <div class="jogo">
-            <h1>RuneScape</h1>
-
-            <img src="imagens/image-RuneScape.jfif">
-
-            <p>
-                RuneScape Dragonwilds chegou ao serviço.
-                Tem exploração, construção e sobrevivência.
-            </p>
-
-            <p>15/09/2026</p>
-
-            <a href="#">clique aqui</a>
-        </div>
-
-        <div class="jogo">
-            <h1>Marvel</h1>
-
-            <img src="imagens/imagen-MARVEL-Cosmic-Invasion.jfif">
+        <section class="introducao">
+            <h2>Novidades do Xbox Game Pass</h2>
 
             <p>
-                Marvel Cosmic Invasion tem ação e vários heróis.
+                O Xbox Game Pass recebeu novos jogos em setembro de 2026.
+                Entre os títulos estão RuneScape: Dragonwilds,
+                Marvel Cosmic Invasion, Planet of Lana II, Routine,
+                Kernel Hearts e Ninja Gaiden 4.
             </p>
-
-            <p>16/09/2026</p>
-
-            <a href="#">clique aqui</a>
-        </div>
-
-        <div class="jogo">
-            <h1>Planet of Lana II</h1>
-
-            <img src="imagens/Imagem-Planet-of-Lana.png">
 
             <p>
-                Jogo de aventura com quebra-cabeças.
+                Os lançamentos estão disponíveis em diferentes plataformas,
+                incluindo Xbox Series X|S, PC e Cloud Gaming.
             </p>
+        </section>
 
-            <p>16/09/2026</p>
+        <section class="jogos" aria-label="Jogos recentes do Xbox Game Pass">
 
-            <a href="#">clique aqui</a>
-        </div>
+            <article id="runescape">
 
-        <div class="jogo">
-            <h1>Routine</h1>
+                <img
+                    src="imagens/image-RuneScape.jfif"
+                    alt="RuneScape Dragonwilds no Xbox Game Pass"
+                    loading="lazy"
+                >
 
-            <img src="imagens/Imagem-ROTINE.jfif">
+                <h2>RuneScape: Dragonwilds</h2>
 
-            <p>
-                Jogo de terror no espaço.
-            </p>
+                <p class="data">
+                    Disponível em 15 de setembro de 2026.
+                </p>
 
-            <p>16/09/2026</p>
+                <p>
+                    RuneScape: Dragonwilds é um dos jogos adicionados
+                    ao catálogo do Xbox Game Pass em setembro de 2026.
+                </p>
 
-            <a href="#">clique aqui</a>
-        </div>
+                <p class="plataformas">
+                    Plataformas: Cloud, Xbox Series X|S e PC.
+                </p>
 
-        <div class="jogo">
-            <h1>Kernel Hearts</h1>
+            </article>
 
-            <img src="imagens/imagem-Kernel-Hearts.jpg">
+            <article id="marvel">
 
-            <p>
-                RPG de ação.
-            </p>
+                <img
+                    src="imagens/imagen-MARVEL-Cosmic-Invasion.jfif"
+                    alt="Marvel Cosmic Invasion no Xbox Game Pass"
+                    loading="lazy"
+                >
 
-            <p>17/09/2026</p>
+                <h2>Marvel Cosmic Invasion</h2>
 
-            <a href="#">clique aqui</a>
-        </div>
+                <p class="data">
+                    Disponível em 16 de setembro de 2026.
+                </p>
 
-        <div class="jogo">
-            <h1>Ninja Gaiden 4</h1>
+                <p>
+                    Marvel Cosmic Invasion também faz parte dos novos
+                    jogos disponíveis no Xbox Game Pass.
+                </p>
 
-            <img src="imagens/imagem-Ninja-Gaiden.jfif">
+                <p class="plataformas">
+                    Plataformas: Cloud, Xbox Series X|S, portátil e PC.
+                </p>
 
-            <p>
-                Jogo de ação ninja.
-            </p>
+            </article>
 
-            <p>17/09/2026</p>
+            <article id="planet">
 
-            <a href="#">clique aqui</a>
-        </div>
+                <img
+                    src="imagens/Imagem-Planet-of-Lana.png"
+                    alt="Planet of Lana II no Xbox Game Pass"
+                    loading="lazy"
+                >
 
-        <div>
-            <h1>Game Pass</h1>
+                <h2>Planet of Lana II</h2>
 
-            <p>
-                O Game Pass possui vários jogos para console e computador.
-            </p>
-        </div>
+                <p class="data">
+                    Disponível em 16 de setembro de 2026.
+                </p>
 
-        <div>
-            <p>
-                Mais jogos podem aparecer depois.
-            </p>
+                <p>
+                    Planet of Lana II está entre os lançamentos
+                    recentes adicionados ao serviço Xbox Game Pass.
+                </p>
 
-            <a href="https://news.xbox.com/pt-br/">clique aqui</a>
-        </div>
+                <p class="plataformas">
+                    Plataformas: Cloud, Xbox Series X|S, portátil e PC.
+                </p>
 
-        <div>
-            <p>
-                Página criada para atividade de HTML.
-            </p>
-        </div>
+            </article>
 
-    </div>
+            <article id="routine">
+
+                <img
+                    src="imagens/Imagem-ROTINE.jfif"
+                    alt="Routine no Xbox Game Pass"
+                    loading="lazy"
+                >
+
+                <h2>Routine</h2>
+
+                <p class="data">
+                    Disponível em 16 de setembro de 2026.
+                </p>
+
+                <p>
+                    Routine é outro título que chegou ao catálogo
+                    do Xbox Game Pass em setembro de 2026.
+                </p>
+
+                <p class="plataformas">
+                    Plataformas: Cloud, console, portátil e PC.
+                </p>
+
+            </article>
+
+            <article id="kernel">
+
+                <img
+                    src="imagens/imagem-Kernel-Hearts.jpg"
+                    alt="Kernel Hearts no Xbox Game Pass"
+                    loading="lazy"
+                >
+
+                <h2>Kernel Hearts</h2>
+
+                <p class="data">
+                    Disponível em 17 de setembro de 2026.
+                </p>
+
+                <p>
+                    Kernel Hearts faz parte da nova seleção de jogos
+                    disponíveis para assinantes do Xbox Game Pass.
+                </p>
+
+                <p class="plataformas">
+                    Plataformas: Cloud, Xbox Series X|S e PC.
+                </p>
+
+            </article>
+
+            <article id="ninja">
+
+                <img
+                    src="imagens/imagem-Ninja-Gaiden.jfif"
+                    alt="Ninja Gaiden 4 no Xbox Game Pass"
+                    loading="lazy"
+                >
+
+                <h2>Ninja Gaiden 4</h2>
+
+                <p class="data">
+                    Disponível em 17 de setembro de 2026.
+                </p>
+
+                <p>
+                    Ninja Gaiden 4 também está entre os jogos
+                    adicionados ao Xbox Game Pass em setembro de 2026.
+                </p>
+
+                <p class="plataformas">
+                    Plataformas: Cloud, Xbox Series X|S, portátil e PC.
+                </p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Página desenvolvida para atividade de Web Design.
+        </p>
+
+        <p>
+            Informações sobre os lançamentos:
+            <a
+                href="https://news.xbox.com/pt-br/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Xbox Wire
+            </a>
+        </p>
+
+    </footer>
 
 </body>
 
