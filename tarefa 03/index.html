@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Exemplo de Post - Aula HTML</title>
+    
+    <style>
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 style="text-align: center;">Título principal (H1)</h1>
+        <h2 style="text-align: left;">Subtítulo (H2)</h2>
+        <h3 style="text-align: right;">Seção (H3)</h3>
+        <h4>Subseção (H4)</h4>
+        <h5>Detalhe (H5)</h5>
+        <h6>Nota (H6)</h6>
+    </header>
+
+    <nav>
+        <p>
+            <a href="#posts">Posts</a> | 
+            <a href="#lateral">Lateral</a> | 
+            <a href="#rodape">Rodapé</a>
+        </p>
+    </nav>
+
+    <section id="posts">
+        <article class="post">
+            <header>
+                <h2>Meu Blog – Primeiro Post</h2>
+            </header>
+
+            <p>
+                Este é um parágrafo com 
+                <strong>negrito</strong>, 
+                <em>itálico</em>, 
+                <span style="text-decoration: underline;">sublinhado</span>, 
+                <span style="text-decoration: line-through;">riscado</span>, 
+                além de exemplos de 
+                <sub>subscrito</sub> e 
+                <sup>sobrescrito</sup>.
+            </p>
+
+            <p style="color: blue; font-size: 20px;">
+                Texto estilizado com cor azul e tamanho de fonte maior.
+            </p>
+
+            <div class="center">
+                Este texto está centralizado.
+            </div>
+
+            <p style="text-align: justify;">
+                Este é um parágrafo longo com alinhamento justificado para demonstrar o uso do text-align. 
+                <br>
+                Esta é a continuação do texto após a quebra de linha.
+            </p>
+        </article>
+    </section>
+
+    <aside id="lateral">
+        <h3>Conteúdo Relacionado</h3>
+        <p>
+            Links, anúncios ou notas que não fazem parte do fluxo principal do artigo.
+        </p>
+    </aside>
+
+    <footer id="rodape">
+        <p>© 2025 – Exemplo didático de HTML da Aula</p>
+    </footer>
+
+</body>
+</html>
